@@ -1,119 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragClientes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClientesFragment">
+    tools:context=".Fragments.ClientesFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"
-            android:paddingTop="?attr/actionBarSize">>
-                <EditText
-                    android:id="@+id/et_nombreCliente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_nuevocliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:background="@drawable/form_bt_circle"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:hint="@string/digitar_nombre"
-                    android:textColor="@android:color/white"
-                    android:textColorHint="@android:color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="-4dp"
-                    tools:layout_editor_absoluteY="107dp" />
-
-                <EditText
-                    android:id="@+id/tvFecha"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
-                    android:layout_width="285dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:focusable="false"
-                    android:hint="@string/hint_fecha"
-                    android:inputType="date"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    tools:layout_editor_absoluteX="34dp"
-                    tools:layout_editor_absoluteY="112dp" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/et_direccionCliente"
-                    android:layout_width="397dp"
-                    android:layout_height="28dp"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:text="@string/tv_fecha"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="57dp" />
-
-                <EditText
-                    android:id="@+id/et_direccionCliente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/et_celularCliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/form_bt_circle"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:hint="@string/direccion_cliente"
-                    android:inputType="text"
-                    android:textColor="@android:color/white"
-                    android:textColorHint="@android:color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="8dp"
-                    tools:layout_editor_absoluteY="249dp" />
-
-                <EditText
-                    android:id="@+id/et_celularCliente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/et_CorreoCliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/form_bt_circle"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:hint="@string/celular_cliente"
-                    android:inputType="phone"
-                    android:textColor="@android:color/white"
-                    android:textColorHint="@android:color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="5dp"
-                    tools:layout_editor_absoluteY="69dp" />
-
-                <EditText
-                    android:id="@+id/et_CorreoCliente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/et_nombreCliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:background="@drawable/form_bt_circle"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:hint="@string/digitar_correo"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@android:color/white"
-                    android:textColorHint="@android:color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="11dp"
-                    tools:layout_editor_absoluteY="241dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:paddingTop="?attr/actionBarSize">
 
 
         <TextView
@@ -129,6 +28,113 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_nombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:background="@drawable/form_bt_circle"
+            android:fontFamily="@font/nunito_extralight"
+            android:hint="@string/digitar_nombre"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nuevocliente" />
+
+        <EditText
+            android:id="@+id/et_CorreoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:background="@drawable/form_bt_circle"
+            android:fontFamily="@font/nunito_extralight"
+            android:hint="@string/digitar_correo"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_nombreCliente" />
+
+        <EditText
+            android:id="@+id/et_celularCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/form_bt_circle"
+            android:fontFamily="@font/nunito_extralight"
+            android:hint="@string/celular_cliente"
+            android:inputType="phone"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_CorreoCliente" />
+
+        <EditText
+            android:id="@+id/et_direccionCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/form_bt_circle"
+            android:fontFamily="@font/nunito_extralight"
+            android:hint="@string/direccion_cliente"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_celularCliente" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="397dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/nunito_extralight"
+            android:text="@string/tv_fecha"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_direccionCliente" />
+
+        <EditText
+            android:id="@+id/tvFecha"
+            android:layout_width="285dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:hint="@string/hint_fecha"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ImageButton
             android:id="@+id/iv_calendar"
@@ -161,4 +167,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
 
-</FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
