@@ -7,14 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import com.teo.businessassistant.R
 
-class ClientesFragment : Fragment() {
+class ListaClientesFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_clientes, container, false)
+        return inflater.inflate(R.layout.fragment_listaclientes, container, false)
     }
+
 
 }
