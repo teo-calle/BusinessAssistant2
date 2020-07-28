@@ -52,4 +52,9 @@
         android:name="com.teo.businessassistant.Fragments.NuevoElementoFragment"
         android:label="fragment_nuevoelemento"
         tools:layout="@layout/fragment_nuevoelemento" />
+    <fragment
+        android:id="@+id/navigation_compras"
+        android:name="com.teo.businessassistant.Fragments.ComprasFragment"
+        android:label="fragment_compras"
+        tools:layout="@layout/fragment_compras" />
 </navigation>
