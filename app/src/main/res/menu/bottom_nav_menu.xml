@@ -16,4 +16,16 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
 
+    <item
+        android:id="@+id/navigation_clientes"
+        android:icon="@drawable/ic_customer"
+        android:title="@string/clientes" />
+
+    <item
+        android:id="@+id/navigation_listInventario"
+        android:icon="@drawable/ic_box"
+        android:title="@string/inventario" />
+
+
+
 </menu>

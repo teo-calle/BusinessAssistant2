@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/miCuentaFragment">
+    app:startDestination="@id/navigation_miCuenta">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -28,27 +28,27 @@
         android:label="fragment_navigation"
         tools:layout="@layout/fragment_navigation" />
     <fragment
-        android:id="@+id/miCuentaFragment"
+        android:id="@+id/navigation_miCuenta"
         android:name="com.teo.businessassistant.Fragments.MiCuentaFragment"
         android:label="Mi cuenta"
         tools:layout="@layout/fragment_micuenta" />
     <fragment
-        android:id="@+id/clientesFragment"
+        android:id="@+id/navigation_clientes"
         android:name="com.teo.businessassistant.Fragments.ClientesFragment"
         android:label="fragment_clientes"
         tools:layout="@layout/fragment_clientes" />
     <fragment
-        android:id="@+id/listaClientesFragment"
+        android:id="@+id/navigation_listaClientes"
         android:name="com.teo.businessassistant.Fragments.ListaClientesFragment"
         android:label="fragment_listaclientes"
         tools:layout="@layout/fragment_listaclientes" />
     <fragment
-        android:id="@+id/listInventarioFragment"
+        android:id="@+id/navigation_listInventario"
         android:name="com.teo.businessassistant.Fragments.ListInventarioFragment"
         android:label="fragment_listinventario"
         tools:layout="@layout/fragment_listinventario" />
     <fragment
-        android:id="@+id/nuevoElementoFragment"
+        android:id="@+id/navigation_nuevoElemento"
         android:name="com.teo.businessassistant.Fragments.NuevoElementoFragment"
         android:label="fragment_nuevoelemento"
         tools:layout="@layout/fragment_nuevoelemento" />
