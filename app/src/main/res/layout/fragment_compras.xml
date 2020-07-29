@@ -19,7 +19,6 @@
             android:id="@+id/tv_resgistrarcompra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="@string/titulo_resgistrarcompra"
             android:textColor="@color/black"
@@ -33,7 +32,11 @@
             android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_resgistrarcompra">
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +45,7 @@
             <TextView
                 android:id="@+id/tv_elegircliente"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="36dp"
                 android:fontFamily="@font/nunito_extralight"
                 android:text="@string/elegircliente"
                 android:textAlignment="textStart"
@@ -57,11 +60,11 @@
                 android:backgroundTint="#C4C4C4"
                 android:backgroundTintMode="multiply"
                 android:dropDownWidth="wrap_content"
-
                 android:scrollbarSize="5dp"
                 android:visibility="visible" />
 
         </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,7 +74,7 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
