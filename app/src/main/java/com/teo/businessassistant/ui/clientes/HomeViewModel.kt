@@ -1,4 +1,4 @@
-package com.teo.businessassistant.ui.home
+package com.teo.businessassistant.ui.clientes
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

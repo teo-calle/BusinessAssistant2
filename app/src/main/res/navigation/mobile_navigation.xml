@@ -6,21 +6,21 @@
     app:startDestination="@id/navigation_miCuenta">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.teo.businessassistant.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_clientes"
+        android:name="com.teo.businessassistant.ui.clientes.clientesFragment"
+        android:label="@string/title_clientes"
+        tools:layout="@layout/fragment_clientes" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_inventario"
         android:name="com.teo.businessassistant.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_inventario"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_compras"
         android:name="com.teo.businessassistant.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_compras"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigationFragment"

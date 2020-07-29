@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "466113651768",
+    "firebase_url": "https://businessassistant2-d4352.firebaseio.com",
+    "project_id": "businessassistant2-d4352",
+    "storage_bucket": "businessassistant2-d4352.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466113651768:android:bc7a17a213569822aef2cd",
+        "android_client_info": {
+          "package_name": "com.teo.businessassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466113651768-4o3sjtl2rj1rfd35kbjkq2q15fh5v2q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC0GmeKQcjUPOZlmeGR75QZ2UpnlLefC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466113651768-4o3sjtl2rj1rfd35kbjkq2q15fh5v2q2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
