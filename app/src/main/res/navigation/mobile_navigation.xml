@@ -46,7 +46,11 @@
         android:id="@+id/navigation_listInventario"
         android:name="com.teo.businessassistant.Fragments.ListInventarioFragment"
         android:label="fragment_listinventario"
-        tools:layout="@layout/fragment_listinventario" />
+        tools:layout="@layout/fragment_listinventario" >
+        <action
+            android:id="@+id/action_navigation_listInventario_to_navigation_nuevoElemento"
+            app:destination="@id/navigation_nuevoElemento" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_nuevoElemento"
         android:name="com.teo.businessassistant.Fragments.NuevoElementoFragment"

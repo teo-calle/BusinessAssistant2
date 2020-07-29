@@ -17,6 +17,4 @@ class ClientesFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_clientes, container, false)
     }
 
-
-
 }
